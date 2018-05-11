@@ -1,0 +1,38 @@
+.container{
+  width: auto;
+  height: auto;
+}
+
+
+.jumbotron{
+width: auto;
+height: auto;
+color: red;
+text-align: center;
+font-family: 'Special Elite', cursive;
+}
+
+.jumbotron img{
+  width: auto;
+  height: auto;
+}
+
+
+
+.h2{
+  font-size: 60px;
+}
+
+.body{
+  background-color: #138D75;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Special Elite', cursive;
+}
+
+.red{
+  width: 30px;
+  height: 50px;
+}
