@@ -17,22 +17,33 @@ font-family: 'Special Elite', cursive;
   height: auto;
 }
 
-
-
 .h2{
-  font-size: 60px;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+
 }
+
+
 
 .body{
   background-color: #138D75;
   width: auto;
   height: auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Special Elite', cursive;
+
 }
 
 .red{
   width: 30px;
   height: 50px;
+}
+
+.btn{
+  color: #E74C3C;
+  border: none;
+  text-align: center;
+  font-size: 16px;
 }
