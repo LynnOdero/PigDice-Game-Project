@@ -1,8 +1,9 @@
-  
- var player_one = DicePlayer("Player I", true,0,0,0,null,false);
- var player_two = DicePlayer("Player II", false,0,0,0,null,false);
+ $(document).ready(function () {
 
-$('#roll-dice').on("click",function () {
+var player_one = DicePlayer("Player I", true,0,0,0,null,false);
+var player_two = DicePlayer("Player II", false,0,0,0,null,false);
+
+$('#roll-dice').on('click',function () {
     console.log("Dice rolled");
    if(player_one.isCurrentPlayer() == true)
    {
@@ -26,7 +27,7 @@ $('#roll-dice').on("click",function () {
 });
 
 
-$('#hold-play').on("click",function () {
+$('#hold-play').click(function () {
     if(player_one.isCurrentPlayer() == true)
     {
         player_one.holdGame();
@@ -36,3 +37,5 @@ $('#hold-play').on("click",function () {
 
      }
  });
+
+});

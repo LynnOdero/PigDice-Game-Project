@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,9 +33,7 @@ Play passes from player to player until a winner is determined.</b> </p>
   <div class="row">
     <div class="col-md-6">
     <p> Player 1</p>
-    <p> <button type="button" id="player-one-results" name="button"> Results </button> </p>
-
-
+     <button type="button" id="player-one-results" name="button"> Results </button> </p>
     </div>
     <div class="col-md-6 red">
       <p> Player 2</p>
@@ -42,60 +41,25 @@ Play passes from player to player until a winner is determined.</b> </p>
     </div>
 </div>
 
-    <div class="button">
-      <div class="row">
-        <div class="col-md-12 btn">
-          <br>
-          <br>
-          <img src="img/diice.png" alt="Roll">
-      <p>  <button type="Roll" name="button" id="roll-dice"> Roll Dice</button></p>
-
-  <p> <button type="Hold" name="button" id="hold-play"> Hold </button> </p>
-
+<div class="row">
+<div class="col-md-6" >
+  <div class="form-group">
+    <input type="submit" value="Roll Dice" id="roll-dice" class="btn bg-success margin pull-right" />
 </div>
-      </div>
-
-    </div>
-  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="submit" id="hold-play" value="Hold Play" class="btn bg-warning margin pull-right" />
+</div>
 </div>
 
-    <div class="footer">
+</div>
+
+ <div class="footer">
     <b>  <p> pig dice game designed by Lynn </p>
       <p> copyright 2018 </p> </b>
 
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
   </body>
 </html>

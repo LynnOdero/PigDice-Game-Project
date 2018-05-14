@@ -1,3 +1,4 @@
+$(document).ready(function () {
 function DiceGameConfig() {
 	var MaximumScore = 6;
 	var WinningScore = 100;
@@ -30,3 +31,4 @@ function DiceGameConfig() {
       }
   }
 }
+});

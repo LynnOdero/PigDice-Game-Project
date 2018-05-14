@@ -1,3 +1,5 @@
+$(document).ready(function () {
+  
 function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,playerHolds,throwScores,isWinner) {
 	this.playerNumber = playerNumber,
 	this.isCurrentPlayer = isCurrentPlayer,
@@ -39,4 +41,4 @@ function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,pl
   }
 
 }
-
+});
