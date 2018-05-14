@@ -4,8 +4,9 @@
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/jquery-3.3.1.js">
-    <link rel="stylesheet" href="js/script.js">
+    <script src="js/jquery-3.3.1.js"> </script>
+    <script  src="js/dice-game-coniguration.js"> </script>
+
     <title>pig dice game</title>
   </head>
   <body>
@@ -28,13 +29,13 @@ Play passes from player to player until a winner is determined.</b> </p>
   <div class="row">
     <div class="col-md-6">
     <p> Player 1</p>
-    <p> <button type="button" name="button"> Results </button> </p>
+    <p> <button type="button" id="player-one-results" name="button"> Results </button> </p>
 
 
     </div>
     <div class="col-md-6 red">
       <p> Player 2</p>
-      <p><button type="button" name="button"> Results </button> </p>
+      <p><button type="button" name="button" id="player-two-results"> Results </button> </p>
     </div>
 </div>
 
@@ -44,15 +45,11 @@ Play passes from player to player until a winner is determined.</b> </p>
           <br>
           <br>
           <img src="img/diice.png" alt="Roll">
-      <p>  <button type="Roll" name="button"> Roll On</button></p>
+      <p>  <button type="Roll" name="button" id="roll-dice"> Roll Dice</button></p>
 
-  <p> <button type="Hold" name="button"> Hold </button> </p>
+  <p> <button type="Hold" name="button" id="hold-play"> Hold </button> </p>
 
 </div>
-
-
-
-
       </div>
 
     </div>
@@ -60,8 +57,8 @@ Play passes from player to player until a winner is determined.</b> </p>
 </div>
 
     <div class="footer">
-      <p> pig dice game designed by Lynn </p>
-      <p> copyright 2018 </p>
+    <b>  <p> pig dice game designed by Lynn </p>
+      <p> copyright 2018 </p> </b>
 
     </div>
 
