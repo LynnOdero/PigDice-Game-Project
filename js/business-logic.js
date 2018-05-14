@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var player_one = new DicePlayer("Player I", true,0,0,0,[],false);
     var player_two = new DicePlayer("Player II", false,0,0,0,[],false);
-    
+    var diceGameConfig = new DiceGameConfig();
   $('#roll-dice').on('click',function () {
       console.log("Dice rolled");
      if(player_one.currentPlayer() == true)
@@ -24,23 +24,29 @@ $(document).ready(function () {
       } 
          $("#player-two-results").val(player_two.getScore());
       }
-     var winner = declareWinningPlayer(player_one,player_two);
+     var winner = diceGameConfig.declareWinningPlayer(player_one,player_two);
      if(winner != null)
      {
-         alert("The winner of this game is: "+winner.playerNumber);
+         alert("The game has ended and the winner of this game is: "+winner.playerNumber + " with "+ winner.accumulatedScore 
+          + "points");
          player_one.setCurrentPlayer();
          player_two.holdGame();
+         player_one.resetPlayerGameDetails();
+         player_two.resetPlayerGameDetails();
      } 
   });
   
   
-  $('#hold-play').click(function () {
-      if(player_one.isCurrentPlayer() == true)
+  $('#hold-play').on('click',function () {
+      if(player_one.currentPlayer() == true)
       {
           player_one.holdGame();
+          player_two.setCurrentPlayer();
       }
-      else{
+      else
+      {
           player_two.holdGame();
+          player_one.setCurrentPlayer();
   
        }
    });

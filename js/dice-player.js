@@ -42,6 +42,13 @@ var DicePlayer = function(playerNumber, isCurrentPlayer,totalTurns,accumulatedSc
   this.setCurrentPlayer = function (){
      this.isCurrentPlayer = true;
   }
+  this.resetPlayerGameDetails = function() {
+  this.totalTurns = 0;
+  this.accumulatedScore = 0;
+  this.playerHolds = 0;
+  this.throwScores = [];
+  this.isWinner = false;
+  }
 
 }
 
