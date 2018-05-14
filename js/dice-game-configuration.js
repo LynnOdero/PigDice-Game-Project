@@ -1,5 +1,4 @@
-$(document).ready(function () {
-function DiceGameConfig() {
+var DiceGameConfig = function () {
 	var MaximumScore = 6;
 	var WinningScore = 100;
   var LosingScore = 1;
@@ -31,4 +30,3 @@ function DiceGameConfig() {
       }
   }
 }
-});

@@ -5,10 +5,12 @@
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/jquery-3.3.1.js"> </script>
-    <script  src="js/dice-game-configuration.js"> </script>
-    <script  src="js/dice-player.js"> </script>
-    <script  src="js/business-logic.js"> </script>
+    <script type="text/javascript"  src="js/dice-game-configuration.js"> </script>
+    <script type="text/javascript"  src="js/dice-player.js"> </script>
+    <script  type="text/javascript" src="js/business-logic.js"> </script>
+
 
 
     <title>pig dice game</title>
@@ -32,25 +34,22 @@
 Play passes from player to player until a winner is determined.</b> </p>
   <div class="row">
     <div class="col-md-6">
-    <p> Player 1</p>
-     <button type="button" id="player-one-results" name="button"> Results </button> </p>
+     Player 1 Results</p>
+     <input type="text" disabled="disabled"  id="player-one-results"/>
     </div>
-    <div class="col-md-6 red">
-      <p> Player 2</p>
-      <p><button type="button" name="button" id="player-two-results"> Results </button> </p>
+    <div class="col-md-6">
+       Player 2 Results </p>
+     <input disabled="disabled" type="text"  id="player-two-results"/>
     </div>
 </div>
 
 <div class="row">
 <div class="col-md-6" >
-  <div class="form-group">
+
     <input type="submit" value="Roll Dice" id="roll-dice" class="btn bg-success margin pull-right" />
 </div>
-</div>
 <div class="col-md-6">
-  <div class="form-group">
     <input type="submit" id="hold-play" value="Hold Play" class="btn bg-warning margin pull-right" />
-</div>
 </div>
 
 </div>
