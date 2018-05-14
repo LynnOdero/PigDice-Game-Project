@@ -1,11 +1,11 @@
-function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,playerHolds,throwScores) {
+function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,playerHolds,throwScores,isWinner) {
 	this.playerNumber = playerNumber,
 	this.isCurrentPlayer = isCurrentPlayer,
   this.totalTurns = totalTurns,
   this.accumulatedScore = accumulatedScore,
   this.playerHolds = playerHolds,
   this.throwScores = [ accumulatedScore ]
-
+  this.isWinner = isWinner;
   this.rollDice = function() {
     var diceGameConfig = new DiceGameConfig();
      var score = diceGameConfig.GeneratePlayerScore();
@@ -18,6 +18,7 @@ function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,pl
      }
      this.totalTurns += this.totalTurns;
      this.throwScores.push(score);
+     return score;
 	}
 
   this.getScore = function ()
@@ -28,6 +29,14 @@ function DicePlayer(playerNumber, isCurrentPlayer,totalTurns,accumulatedScore,pl
   this.holdGame = function()
   {
     this.isCurrentPlayer = false;
+    this.playerHolds += this.playerHolds;
   }
-	}
+  this.isWinningPlayer = function (isWinner){
+       this.isWinningPlayer = isWinner;
+  }
+  this.currentPlayer = function (){
+    return this.isCurrentPlayer;
+  }
+
 }
+
