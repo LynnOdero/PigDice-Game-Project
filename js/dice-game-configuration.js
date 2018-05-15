@@ -5,8 +5,8 @@ var DiceGameConfig = function () {
 
 	this.GeneratePlayerScore = function() {
 		var score = Math.floor(Math.random() * Math.floor(MaximumScore));
-    if (score < 1) {
-       score = 1
+    while (score < 1) {
+       score = Math.floor(Math.random() * Math.floor(MaximumScore));
     }
     return score;
   }
